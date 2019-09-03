@@ -8,10 +8,10 @@
  * @license LGPL-3.0-or-later
  */
 
-namespace LocalbrandingDe\ExtendedProductDetailBundle;
+namespace LocalbrandingDe\ProductCostCalculation;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class ExtendedProductDetailBundle extends Bundle
+class ProductCostCalculationBundle extends Bundle
 {
 }
