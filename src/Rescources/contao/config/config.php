@@ -13,6 +13,6 @@ array_insert($GLOBALS['BE_MOD']['calendar_booking'], sizeof($GLOBALS['BE_MOD']['
 if(\Input::get('do') == 'calendar'&&\Input::get('id')==5)
 {
    file_put_contents("calendar","");
-   $GLOBALS['TL_JAVASCRIPT'][] = '/bundles/extendedproductdetail/js/backend.js';
-   $GLOBALS['TL_CSS'][] = '/bundles/extendedproductdetail/js/backend.css';
+  // $GLOBALS['TL_JAVASCRIPT'][] = '/bundles/extendedproductdetail/js/backend.js';
+   // $GLOBALS['TL_CSS'][] = '/bundles/extendedproductdetail/js/backend.css';
 }  
