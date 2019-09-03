@@ -7,63 +7,6 @@
 //Legenden hinzuf�gen
 $GLOBALS['TL_DCA']['tl_lb_costType']['palettes']['default']=str_replace('alias;','alias;{lb_priceDescriptionLegend},lb_inPriceHeader1,lb_inPriceText1,lb_inPriceHeader2,lb_inPriceText2,lb_inPriceHeader3,lb_inPriceText3',$GLOBALS['TL_DCA']['tl_ls_shop_product']['palettes']['default'] );
 
-// Hinzuf�gen der Feld-Konfiguration
-$GLOBALS['TL_DCA']['tl_lb_costType']['fields']['isTask'] = array
-(
-    'label'     => &$GLOBALS['TL_LANG']['tl_lb_costType']['isTask'],
-    'inputType' => 'checkbox',
-    'eval'      => array( 'submitOnChange'=>true,'feEditable'=>true, 'feViewable'=>true,'tl_class'=>'w50'),
-    'sql'       => "char(1) NOT NULL default ''"
-);
-
-$GLOBALS['TL_DCA']['tl_lb_costType']['fields']['costType'] = array
-(
-    'label'     => &$GLOBALS['TL_LANG']['tl_lb_costType']['costType'],
-    'inputType' => 'text',
-    'eval'      => array('tl_class'=>'w50','maxlength'=>255),
-    'sql'       => "varchar(256) NOT NULL default ''"
-);
-
-$GLOBALS['TL_DCA']['tl_lb_costType']['fields']['measure'] = array
-(
-    'label'     => &$GLOBALS['TL_LANG']['tl_lb_costType']['measure'],
-    'inputType' => 'text',
-    'eval'      => array('tl_class'=>'w50','maxlength'=>255),
-    'sql'       => "varchar(256) NOT NULL default ''"
-);
-
-$GLOBALS['TL_DCA']['tl_lb_costType']['fields']['lb_inPriceText1'] = array
-(
-    'label'     => &$GLOBALS['TL_LANG']['tl_lb_costType']['lb_inPriceText1'],
-    'exclude' => true,
-    'inputType'               => 'textarea',
-    'eval'                    => array('rte'=>'tinyMCE', 'tl_class'=>'clr', 'merconis_multilanguage' => true, 'decodeEntities' => true),
-    'search'		=> true
-);
-
-$GLOBALS['TL_DCA']['tl_lb_costType']['fields']['lb_inPriceText2'] = array
-(
-    'label'     => &$GLOBALS['TL_LANG']['tl_lb_costType']['lb_inPriceText2'],
-    'exclude' => true,
-    'inputType'               => 'textarea',
-    'eval'                    => array('rte'=>'tinyMCE', 'tl_class'=>'clr', 'merconis_multilanguage' => true, 'decodeEntities' => true),
-    'search'		=> true
-);
-
-$GLOBALS['TL_DCA']['tl_lb_costType']['fields']['lb_inPriceText3'] = array
-(
-    'label'     => &$GLOBALS['TL_LANG']['tl_lb_costType']['lb_inPriceText3'],
-    'exclude' => true,
-    'inputType'               => 'textarea',
-    'eval'                    => array('rte'=>'tinyMCE', 'tl_class'=>'clr', 'merconis_multilanguage' => true, 'decodeEntities' => true),
-    'search'		=> true
-);
-
-
-/**
- * Table tl_lb_location
- */
-
 $GLOBALS['TL_DCA']['tl_lb_costType'] = array
 (
     
